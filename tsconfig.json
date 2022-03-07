@@ -1,0 +1,47 @@
+{
+    // ts编译器的配置文件
+    // tsc -w 自动监视所有ts文件 转 js
+    // include 指定哪些 ts 文件需要被编译
+    // 路径： ** 表示任意目录  * 表示任意文件
+    "include": [
+        // 表示只编译 src 目录下的 ts
+        "./src/**/*"
+    ],
+    // "exclude": [
+    //     // 不需要被编译的文件目录 一般有默认值 
+    //     "./src/hello/**/*"
+    // ],
+    "compilerOptions": {
+        // 编译器的选项
+        "target": "ES6",  // 编译成 js 的版本
+        "module": "ES6", // 指定模块化的方式
+        // lib 表示项目中需要用到哪些库
+        // "lib": [],
+        // outDir 指定编译后文件所在的目录
+        "outDir": "./dist",
+        // 严格检查总开关 设置 strict 为 true 所有严格检查均开始 不需要再设置其他的严格检查
+        "strict": true,
+        // outFile 将代码合并成一个文件 结合打包工具使用
+        // "outFile": "./dist/app.js"
+        // allowJS 是否对 js 文件进行编译 默认 false
+        "allowJs": false,
+        // checkJS 检查 js 代码是否符合规范 默认 false
+        "checkJs": false,
+        // removeComments 是否移除注释 默认 false
+        "removeComments": true,
+        // noEmit 生成编译后的文件
+        // 只想用 ts 检查语法 不编译 时候用
+        "noEmit": false,
+        // 有错误时不生成编译文件
+        "noEmitOnError": false,
+        // alwaysStrict 编译后的文件是否使用严格模式
+        // 有导入导出模块 js 自动进入严格模式
+        "alwaysStrict": true,
+        // 不允许隐式的any类型 
+        "noImplicitAny": true,
+        // noImplicitThis 不允许不明确类型的 this
+        "noImplicitThis": true,
+        // strictNullChecks 严格的检查空值
+        "strictNullChecks": true
+    },
+}
