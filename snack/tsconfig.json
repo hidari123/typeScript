@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        // 编译器的选项
+        "target": "ES6",  // 编译成 js 的版本
+        "module": "ES6", // 指定模块化的方式
+        // 严格检查总开关 设置 strict 为 true 所有严格检查均开始 不需要再设置其他的严格检查
+        "strict": true,
+        "noEmitOnError": true
+    }
+}
